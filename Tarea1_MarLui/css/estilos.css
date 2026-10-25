@@ -98,7 +98,7 @@ nav ul li a:hover {
 }
 
 /* ============================================ */
-/* 3. PARA LOS TITULOS DE CADA SECCION          */
+/* 4. PARA LOS TITULOS DE CADA SECCION          */
 /* ============================================ */
 .section-titulo {
   position: relative;
@@ -119,7 +119,7 @@ nav ul li a:hover {
 }
 
 /* ============================================ */
-/* 3. FICHAS DE LA SECCION 1                    */
+/* 5. FICHAS DE LA SECCION 1                    */
 /* ============================================ */
 
 .proyecto-grilla{
@@ -212,7 +212,7 @@ img{
 }
 
 /* ============================================ */
-/* 5. FOOTER                                    */
+/* 6. FOOTER                                    */
 /* ============================================ */
 footer {
   background: var(--bg-secondary);
