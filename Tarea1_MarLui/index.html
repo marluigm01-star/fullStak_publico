@@ -2,16 +2,17 @@
 <html lang="es">
 
 <head>
-  <title>Maria Luisa Gonzales Mendoza - full stack</title>
+  <title>TAREA1 MarLui</title>
   <!-- SEO & Open Graph Meta Tags -->
-  <meta name="description" content="Portafolio de Maria Luisa Gonzales M., Desarrollador de software y analista programador" />
+  <meta name="description"
+    content="Portafolio de Maria Luisa Gonzales M., Desarrollador de software y analista programador" />
   <meta name="keywords" content="desarrollador, full stack, react, nodejs, python, portafolio" />
   <meta name="author" content="Maria Luisa Gonzales Mendoza" />
   <!-- Open Graph -->
   <meta property="og:title" content="Maria Luisa Gonzales Mendoza – Desarrollador Full Stack" />
   <meta property="og:description" content="Portafolio profesional de Maria Luisa Gonzales." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://hebertcussi.dev" />  <!-- podemos hacer con dominios gratuitos -->
+  <meta property="og:url" content="https://hebertcussi.dev" /> <!-- podemos hacer con dominios gratuitos -->
 
   <link rel="stylesheet" href="css/estilos.css" />
 </head>
@@ -33,7 +34,7 @@
       </div>
     </div>
   </header>
-  
+
   <!-- <main> agrupa el contenido principal -->
   <main>
     <!--<section> Hero / Inicio -->
@@ -42,28 +43,15 @@
         <h2>Diseño y desarrollo <br> con prototipo</h2>
       </div>
     </section>
+    
     <!-- <section> Acerca de -->
     <section id="proyectos">
       <div class="container">
         <h2 class="section-titulo">Proyectos destacados</h2>
         <div class="proyecto-grilla">
-          <article>
-            <div class="proyecto-img">📱</div>
-            <div class="proyecto-info">
-              <h3>App tareas</h3>
-              <p>Aplicación web con drag & drop, almacenamiento local. UI minimalista con microinteracciones.</p>
-              <div>
-                <span class="tecnologias">React</span>
-                <span class="tecnologias">CSS</span>
-                <span class="tecnologias">Flexbox</span>
-              </div>
-            </div>
-          </article>
-        </div>
 
-        <div class="proyecto-grilla">
-          <article>
-            <div class="proyecto-img">🌿</div>
+          <article class="project-cards">
+            <div class="proyecto-img"><img src="img/app.webp"></div>
             <div class="proyecto-info">
               <h3>App tareas</h3>
               <p>Aplicación web con drag & drop, almacenamiento local. UI minimalista con microinteracciones.</p>
@@ -74,32 +62,45 @@
               </div>
             </div>
           </article>
-        </div>
+        
+          <article class="project-cards">
+            <div class="proyecto-img"><img src="img/eco.webp"></div>
+            <div class="proyecto-info">
+              <h3>EcoShop</h3>
+              <p>E-commerce sostenible con sistema de filtros, carrito de compras y diseño responsive.</p>
+              <div>
+                <span class="tecnologias">HTML5 semántico</span>
+                <span class="tecnologias">CSS Grid</span>
+                <span class="tecnologias">JavaScript</span>
+              </div>
+            </div>
+          </article>
+        
+          <article class="project-cards">
+            <div class="proyecto-img"><img src="img/estadi.webp"></div>
+            <div class="proyecto-info">
+              <h3>Dashboard Analytics</h3>
+              <p>Panel de control interactivo con grafico en tiempo real y tema personalizable.</p>
+              <div>
+                <span class="tecnologias">Chartjs</span>
+                <span class="tecnologias">Flexbox</span>
+                <span class="tecnologias">API REST</span>
+              </div>
+            </div>
+          </article>
 
-      <div class="proyecto-grilla">
-          <article>
-            <div class="proyecto-img">☘️</div>
-            <div class="proyecto-info">
-              <h3>App tareas</h3>
-              <p>Aplicación web con drag & drop, almacenamiento local. UI minimalista con microinteracciones.</p>
-              <div>
-                <span class="tecnologias">React</span>
-                <span class="tecnologias">CSS</span>
-                <span class="tecnologias">Flexbox</span>
-              </div>
-            </div>
-          </article>
-        </div> 
+        </div>
 
       </div>
     </section>
+
     <!--  <section> Proyectos con CSS Grid + <article> semántico -->
     <section id="habilidades">
       <div class="container">
         <h2 class="section-titulo">Tecnologias y habilidades</h2>
         <div class="skills-container">
-          <div class="skill-items">Figma</div>
-          <div class="skill-items">React</div>
+          <div class="skill-items"><img src="img/figma.jpg" class="icono">Figma</div>
+          <div class="skill-items"><img src="img/react.jpg" class="icono">React</div>
         </div>
       </div>
     </section>
@@ -126,4 +127,5 @@
     </div>
   </footer>
 </body>
+
 </html>
