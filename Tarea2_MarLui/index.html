@@ -39,12 +39,83 @@
   <main>
     <!--<section> Hero / Inicio -->
     <section id="inicio">
-      <div class="container">
-        <h2>Diseño y desarrollo <br> con prototipo</h2>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge">Disponible para proyectos</span>
+          <h1>Hola soy <br> <strong>Maria Luisa Gonzales</strong></h1>
+          <p>Desarrolladora de Software y Analista de Sistemas, me especializo en diseño de base de datos. Con
+            mas de 15 años de experiencia.</p>
+          <div class="hero-action">
+            <a href="#proyectos" class="btn btn--primary"> Ver proyectos</a>
+            <a href="#contacto" class="btn btn--secundary"> Ver contactos</a>
+          </div>
+        </div>
+        <aside class="hero-visual">
+          <div class="floar-card card--a">React</div>
+          <div class="floar-card card--d">Pyton</div>
+          <div class="floar-card card--c">Nodejs</div>
+          <div class="avatar-ring">
+            <div class="avatar-inner">HC</div>
+          </div>
+        </aside>
+  
       </div>
     </section>
     
-    <!-- <section> Acerca de -->
+    <section id="acercade">
+      <div class="container">
+        <h2 class="section-titulo">Acerca de mi</h2>
+        <p>Apasionada por construir aplicaciones web y móviles con tecnologías modernas.</p>
+        <div class="about-bio">
+          <p> Soy un apasionada investigadora y desarrolladora de software con experiencia en
+            diversas tecnologías y lenguajes de programación.
+            <br>Me especializo en el desarrollo de aplicaciones web y móviles, y siempre estoy
+            investigando para aprender nuevas habilidades con el fin de mejorar mis proyectos.
+          </p>
+        </div>
+        <!-- CSS Grid: layout de habilidades con grid-template-areas -->
+        <div class="skills-grid">
+          <article class="skill-cards">
+            <span class="skill-icons">⚙️</span>
+            <h3>Back-End</h3>
+            <ul>
+              <li>Node.js (Nestjs, Espress)</li>
+              <li>PHP (LARAVEL, Sinphoni, Yii )</li>
+              <li>Python (Django, Slak)</li>
+              <li>Java (SpringBoot)</li>
+              <li>NetCore (C#)</li>
+            </ul>
+          </article>
+          <article class="skill-cards">
+            <span class="skill-icons">⚙️</span>
+            <h3>Front-End</h3>
+            <ul>
+              <li>React (Nextjs)</li>
+              <li>Angular (LARAVEL, Sinphoni, Yii )</li>
+              <li>Vuejs (Django, Slak)</li>
+              <li>NetCore (Asp)</li>
+              <li>Electron</li>
+            </ul>
+          </article>
+          <article class="skill-cards">
+            <span class="skill-icons">⚙️</span>
+            <h3>Base de Datos</h3>
+            <ul>
+              <li>PostgreSql</li>
+              <li>MariaDB, MySQL</li>
+              <li>SqlServer</li>
+              <li>Oracle</li>
+              <li>MongoDB</li>
+              <li>Informix</li>
+            </ul>
+          </article>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- <section> mis proyectos -->
     <section id="proyectos">
       <div class="container">
         <h2 class="section-titulo">Proyectos destacados</h2>
@@ -62,7 +133,7 @@
               </div>
             </div>
           </article>
-        
+
           <article class="project-cards">
             <div class="proyecto-img"><img src="img/eco.webp"></div>
             <div class="proyecto-info">
@@ -75,7 +146,7 @@
               </div>
             </div>
           </article>
-        
+
           <article class="project-cards">
             <div class="proyecto-img"><img src="img/estadi.webp"></div>
             <div class="proyecto-info">
@@ -104,10 +175,54 @@
         </div>
       </div>
     </section>
-    <!--  <section> Contacto con formulario HTML5 validado -->
+
+<!--  <section> Contacto con formulario HTML5 validado -->
     <section id="contacto">
       <div class="container">
         <h2 class="section-titulo">Contactenos</h2>
+        <p>¿Tienes un proyecto en mente? Hablemos.</p>
+
+        <div class="contact-form">
+          <form action="#" method="post" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required minlength="3" placeholder="Escribe tu nombre completo" autocomplete="name"/>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electronico</label>
+              <input type="email" id="email" name="email" required placeholder="tu-correo@ejemplo.com" autocomplete="email"/>
+            </div>
+            <div class="form-group">
+              <label for="fecha">Fecha preferida de contacto</label>
+              <input type="date" id="fecha" name="fecha"/>
+            </div>
+            <div class="form-group">
+              <label for="presupuesto">Presupuesto estimado
+                <span class="rango-valor" id="presupuesto-valor">Bs 500</span>
+              </label>
+              <input type="range" id="presupuesto" name="presupuesto" min="100" max="5000" step="100" value="1000"/>
+              <div class="rango-labels">
+                <span>Bs. 100 </span> <span>Bs. 5000</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="servicio">Tipo de Servicio</label>
+              <input type="search" id="servicio" name="search" list="servicio-lista" placeholder="Busque el servicio..."/>
+              <datalist id="servicio-lista">
+              <option value="Desarrollo Web Full Stack"></option>
+              <option value="Consultaria tecnica"></option>
+              <option value="Base de Datos"></option>
+            </datalist>
+            </div>
+            
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" id="mensaje" rows="4" required minlength="20" placeholder="Cuentame de que se trata tu proyecto"></textarea>
+            </div>
+            <button type="button" class="btn-submit">Enviar Mensaje </button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
