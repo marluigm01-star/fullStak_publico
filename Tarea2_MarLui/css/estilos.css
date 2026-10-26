@@ -498,16 +498,22 @@ input[type="range"]{
   animation-delay: 0s;
 }
 
-.card--b{
+.card--d{
   top: 55%; 
-  left: 5%;
+  right: 5%;
   animation-delay: 1.3s;
 }
 
 .card--c{
-  top: 8%; 
+  bottom: 8%; 
   left: 20%;
   animation-delay: 0.8s;
+}
+
+/* ✅ KEYFRAMES: flotación */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
 }
 
 .avatar-ring{
