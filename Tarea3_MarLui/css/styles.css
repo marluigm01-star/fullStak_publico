@@ -18,7 +18,7 @@
   --accent:        #6366f1;
   --accent-hover:  #4f46e5;
   --accent-light:  #e0e7ff;
-  --accent-2:      #a855f7;
+  --accent-2:      #e74693;
   --border:        #e5e7eb;
   --card-shadow:   0 4px 24px -4px rgba(99,102,241,0.08), 0 1px 4px rgba(0,0,0,0.04);
 
@@ -44,6 +44,10 @@
 }
 
 html { scroll-behavior: smooth; }
+
+.icono{
+  width:100px;
+} 
 
 body {
   background-color: var(--bg-primary);
